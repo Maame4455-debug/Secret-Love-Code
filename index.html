@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Message For You</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050b08;
+    color: #72ffc0;
+    font-family: 'Courier New', monospace;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #0b1710;
+    border: 1px solid #397b56;
+    padding: 35px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 30px #35ff9b30;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #7cae92;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+p {
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.code {
+    font-size: 75px;
+    letter-spacing: 15px;
+    margin: 20px 0;
+    text-shadow: 0 0 20px #72ffc0;
+}
+
+button {
+    background: transparent;
+    color: #72ffc0;
+    border: 1px solid #72ffc0;
+    padding: 14px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: inherit;
+}
+
+button:hover {
+    background: #72ffc0;
+    color: black;
+}
+
+#message {
+    display: none;
+    margin-top: 25px;
+    padding: 20px;
+    background: #10271a;
+    border-left: 3px solid #72ffc0;
+    line-height: 1.9;
+}
+
+.heart {
+    color: red;
+    font-size: 25px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <span>PRIVATE FILE // 143</span>
+        <span>● ENCRYPTED</span>
+    </div>
+
+    <h1>YOU HAVE A SECRET.</h1>
+
+    <p>
+        A message has been created for someone special.
+        <br>
+        Identity: CLASSIFIED
+    </p>
+
+    <hr style="margin:25px 0; border:1px dashed #397b56;">
+
+    <p>DECODE THIS NUMBER:</p>
+
+    <div class="code">143</div>
+
+    <p>
+        1 letter · 4 letters · 3 letters.
+        <br>
+        Three words. One feeling.
+    </p>
+
+    <button onclick="openMessage()">
+        [ OPEN SECRET MESSAGE ]
+    </button>
+
+    <div id="message">
+
+        <h2>A MESSAGE YOU NEED TO READ ❤️</h2>
+
+        <p>
+        We have been connected for a long time,
+        and I never expected things to become
+        this way between us.
+        </p>
+
+        <p>
+        Lately, I've noticed that you've changed.
+        You no longer share your plans with me
+        like you used to. Instead, you keep things
+        to yourself and only show me the results
+        when everything is already done.
+        </p>
+
+        <p>
+        I'm not asking you to tell me every little
+        detail of your life, but I believe that a
+        genuine connection is built on trust,
+        honesty, and communication.
+        </p>
+
+        <p>
+        It hurts when someone who was once part
+        of your journey starts treating you like
+        a stranger.
+        </p>
+
+        <p>
+        I don't want things to go back to how they
+        were just because of words. I want to see
+        change through your actions.
+        </p>
+
+        <p>
+        Please, take a moment to reflect on how
+        you've changed and correct what needs
+        to be corrected.
+        </p>
+
+        <p>
+        Don't let time, success, or new priorities
+        make you forget the people who genuinely
+        cared about you.
+        </p>
+
+        <h3 class="heart">
+        Some connections are worth protecting. ❤️
+        </h3>
+
+    </div>
+
+</div>
+
+<script>
+function openMessage() {
+    document.getElementById("message").style.display = "block";
+}
+</script>
+
+</body>
+</html>
